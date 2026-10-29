@@ -1,1 +1,60 @@
-<p>first commit<p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="utility-bar" aria-label="Quick access">
+        <div class="utility-icons" aria-hidden="true">
+          <span>◷</span>
+          <span>♡</span>
+          <span>☆</span>
+        </div>
+        <div class="utility-icons" aria-hidden="true">
+          <span>⌂</span>
+          <span>○</span>
+          <span>☰</span>
+        </div>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#my-info">My info</a>
+        <a href="#my-finances">My finances</a>
+        <a href="#my-advisors">My advisors</a>
+        <a href="#holds">Holds</a>
+        <a href="#to-do-list">To-Do list</a>
+        <a href="#milestones">Milestones</a>
+        <a class="notification" href="#notifications" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" /></svg>
+        </a>
+      </nav>
+    </header>
+
+    <main class="dashboard" aria-label="Student dashboard">
+      <nav class="quick-links" aria-label="Academic tools">
+        <a class="find-classes" href="#find-classes">Find Classes <span aria-hidden="true">▾</span></a>
+        <div class="quick-link-list">
+          <a href="#degree-planning">Degree Planning</a>
+          <a href="#transfer">Transfer</a>
+          <a href="#academic-records">Academic Records</a>
+        </div>
+      </nav>
+
+      <section class="panel enrollment-panel" aria-label="Enrollment and final exams">
+        <div class="panel-section enrollment">
+          <h1>Enrollment</h1>
+        </div>
+        <div class="panel-section final-exams">
+          <h2>Final Exams</h2>
+        </div>
+      </section>
+
+      <section class="panel schedule-panel" aria-labelledby="schedule-title">
+        <h2 id="schedule-title">Schedule</h2>
+      </section>
+    </main>
+  </body>
+</html>
