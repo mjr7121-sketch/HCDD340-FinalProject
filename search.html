@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find Classes</title>
+  </head>
+  <body>
+    <main>
+      <h1>Find Classes</h1>
+
+      <aside aria-label="Search options">
+        <a href="index.html">Home</a>
+        <div>
+          <label for="term">Term</label>
+          <select id="term" name="term" form="class-search">
+            <option value="">All terms</option>
+            <option value="fall">Fall</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+          </select>
+        </div>
+      </aside>
+
+      <form id="class-search" role="search" action="search.html" method="get">
+        <label for="class-query">Course name or number</label>
+        <input id="class-query" name="q" type="search">
+        <button type="submit">Search</button>
+      </form>
+
+      <section aria-labelledby="results-heading">
+        <h2 id="results-heading">Class results</h2>
+        <ul>
+          <li>Class 1</li>
+          <li>Class 2</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

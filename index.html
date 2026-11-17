@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="utility-bar" ></div>
+      <div class="utility-bar">
         <div class="utility-icons" aria-hidden="true">
           <span>◷</span>
           <span>♡</span>
@@ -35,7 +35,11 @@
 
     <main class="dashboard" aria-label="Student dashboard">
       <nav class="quick-links" aria-label="Academic tools">
-        <a class="manage-classes" href="#manage-classes">Manage Classes <span aria-hidden="true">▾</span></a>
+        <details class="manage-classes">
+          <summary>Manage classes</summary>
+          <a href="search.html">Find Classes</a>
+          <a href="edit.html">Edit Classes</a>
+        </details>
         <div class="quick-link-list">
           <a href="#degree-planning">Degree Planning</a>
           <a href="#transfer">Transfer</a>
