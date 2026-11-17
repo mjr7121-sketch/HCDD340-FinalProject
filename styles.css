@@ -1,6 +1,13 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #314d64;
+  --secondary-color: #009cde;
+  --bg-light: #f6fbff;
+  --accent-orange: #f5a623;
+  --accent-green: #c2e16a;
+}
 
 body {
   margin: 0;
