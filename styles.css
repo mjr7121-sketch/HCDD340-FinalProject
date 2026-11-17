@@ -23,7 +23,7 @@ body {
 
 .utility-bar {
   min-height: 42px;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 4.5%;
   border-bottom: 1px solid #dededb;
 }
@@ -35,10 +35,19 @@ body {
   line-height: 1;
 }
 
+.utility-icons:last-child {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
 .primary-nav {
   min-height: 58px;
-  justify-content: space-between;
   padding: 0 3%;
+}
+
+.primary-nav > a:not(.notification) {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .primary-nav a {
@@ -55,6 +64,9 @@ body {
 }
 
 .primary-nav .notification {
+  display: flex;
+  flex: 0 0 52px;
+  justify-content: flex-end;
   padding-right: 0;
   border-right: 0;
   font-size: 22px;
@@ -157,9 +169,17 @@ body {
     padding: 6px 16px;
   }
 
+  .primary-nav > a:not(.notification) {
+    flex: 0 0 auto;
+  }
+
   .primary-nav a {
     flex: 0 0 auto;
     padding: 8px 12px;
+  }
+
+  .primary-nav .notification {
+    flex: 0 0 auto;
   }
 
   .dashboard {
